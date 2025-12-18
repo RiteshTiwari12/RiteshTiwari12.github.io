@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog — Ritesh Tiwari</title>
+<link rel="stylesheet" href="assets/style.css">
+<script>
+  MathJax = {
+    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="brand">Ritesh Tiwari</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a class="active" href="blog.html">Blog</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main class="container fade-in">
+  <section class="blog-section">
+  <h1 class="page-title">Blog</h1>
+
+  <div class="blog-grid">
+
+    <article class="blog-card">
+
+      <h3>Euler’s Identity</h3>
+
+      <p class="blog-meta">
+        December 2025
+      </p>
+
+      <p>
+        Among all equations in mathematics, Euler’s identity is often regarded
+        as the most elegant. It establishes a deep connection between seemingly
+        unrelated mathematical constants in a single, compact expression:
+      </p>
+
+      <div class="math-display">
+        $$ e^{i\pi} + 1 = 0 $$
+      </div>
+
+      <p>
+        This identity involves five fundamental constants: the base of the
+        natural logarithm $e$, the imaginary unit $i$, the geometric constant
+        $\pi$, and the additive and multiplicative identities $0$ and $1$.
+        Each of these constants originates from a different branch of
+        mathematics, making their appearance together especially remarkable.
+      </p>
+
+      <h4>Euler’s Formula</h4>
+
+      <p>
+        The identity follows directly from Euler’s formula, which states that
+        for any real number $x$,
+      </p>
+
+      <div class="math-display">
+        $$ e^{ix} = \cos x + i \sin x. $$
+      </div>
+
+      <p>
+        Euler’s formula itself can be derived using the Taylor series
+        expansions of the exponential, sine, and cosine functions. It provides
+        a powerful link between exponential growth and trigonometric behavior.
+      </p>
+
+      <h4>Derivation of the Identity</h4>
+
+      <p>
+        Substituting $x = \pi$ into Euler’s formula gives
+      </p>
+
+      <div class="math-display">
+        $$ e^{i\pi} = \cos \pi + i \sin \pi. $$
+      </div>
+
+      <p>
+        Since $\cos \pi = -1$ and $\sin \pi = 0$, this simplifies to
+      </p>
+
+      <div class="math-display">
+        $$ e^{i\pi} = -1. $$
+      </div>
+
+      <p>
+        Adding $1$ to both sides yields Euler’s identity.
+      </p>
+
+      <h4>Geometric Interpretation</h4>
+
+      <p>
+        On the complex plane, the expression $e^{ix}$ represents a point on the
+        unit circle. As $x$ varies, the point rotates counterclockwise around
+        the circle. When $x = \pi$, the point lies on the negative real axis at
+        $-1$. This geometric viewpoint provides an intuitive explanation of
+        Euler’s identity.
+      </p>
+
+      <h4>Why Is It Considered Beautiful?</h4>
+
+      <p>
+        Euler’s identity is often praised for its simplicity and depth. It
+        unifies algebra, geometry, analysis, and complex numbers in a single
+        statement. Few equations manage to capture such a wide range of
+        mathematical ideas so concisely.
+      </p>
+
+      <p>
+        For many mathematicians, Euler’s identity serves as an example of the
+        inherent harmony within mathematics — a reminder that deep connections
+        often exist beneath the surface of seemingly separate concepts.
+      </p>
+
+      <p class="blog-footer">
+        Topics: Complex Numbers · Trigonometry · Analysis
+      </p>
+
+    </article>
+
+    <article class="blog-card">
+
+      <h3>Understanding Epsilon–Delta Notation</h3>
+
+      <p class="blog-meta">
+        December 2025
+      </p>
+
+      <p>
+        One of the most fundamental — and often challenging — concepts in real
+        analysis is the rigorous definition of a limit using epsilon–delta
+        notation. While intuitive ideas of limits are common from calculus,
+        epsilon–delta definitions provide the precise logical foundation.
+      </p>
+
+      <h4>The Intuitive Idea of a Limit</h4>
+
+      <p>
+        Informally, saying that a function $f(x)$ approaches a value $L$ as $x$
+        approaches $a$ means that the values of $f(x)$ can be made arbitrarily
+        close to $L$ by taking $x$ sufficiently close to $a$. Epsilon–delta
+        notation formalizes this idea.
+      </p>
+
+      <h4>The Formal Definition</h4>
+
+      <p>
+        We say that
+      </p>
+
+      <div class="math-display">
+        $$ \lim_{x \to a} f(x) = L $$
+      </div>
+
+      <p>
+        if for every $\varepsilon > 0$, there exists a $\delta > 0$ such that
+        whenever $0 < |x - a| < \delta$, it follows that
+      </p>
+
+      <div class="math-display">
+        $$ |f(x) - L| < \varepsilon. $$
+      </div>
+
+      <p>
+        In this definition, $\varepsilon$ represents how close we want the
+        function values to be to the limit, while $\delta$ determines how close
+        $x$ must be to the point $a$.
+      </p>
+
+      <h4>Understanding the Roles of $\varepsilon$ and $\delta$</h4>
+
+      <p>
+        The key idea is that $\varepsilon$ is chosen first, independently of
+        $\delta$. Once an acceptable error tolerance $\varepsilon$ is fixed, we
+        must then find a corresponding $\delta$ that guarantees the inequality
+        $|f(x) - L| < \varepsilon$.
+      </p>
+
+      <p>
+        This order of quantifiers is essential: the function must work for
+        <em>every</em> $\varepsilon > 0$, no matter how small.
+      </p>
+
+      <h4>An Example</h4>
+
+      <p>
+        Consider the function $f(x) = 2x$. We claim that
+      </p>
+
+      <div class="math-display">
+        $$ \lim_{x \to 1} 2x = 2. $$
+      </div>
+
+      <p>
+        Given any $\varepsilon > 0$, we want $|2x - 2| < \varepsilon$. This
+        inequality simplifies to
+      </p>
+
+      <div class="math-display">
+        $$ |x - 1| < \frac{\varepsilon}{2}. $$
+      </div>
+
+      <p>
+        Therefore, choosing $\delta = \varepsilon / 2$ ensures the required
+        condition. This verifies the limit using epsilon–delta notation.
+      </p>
+
+      <h4>Why Epsilon–Delta Matters</h4>
+
+      <p>
+        Although epsilon–delta arguments can initially seem abstract, they
+        establish the logical rigor underlying calculus. Many advanced concepts
+        in analysis — such as continuity, differentiability, and uniform
+        convergence — rely on similar definitions.
+      </p>
+
+      <p>
+        Mastering epsilon–delta notation is an important step toward thinking
+        rigorously and precisely in mathematics.
+      </p>
+
+      <p class="blog-footer">
+        Topics: Limits · Continuity · Real Analysis
+      </p>
+
+    </article>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> Ritesh Tiwari</footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
