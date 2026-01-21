@@ -310,4 +310,21 @@ a { color: var(--accent); }
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* --- Fix project section collisions --- */
+
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;   /* space between major blocks */
+}
+
+.section-title {
+  margin-top: 3rem;
+  margin-bottom: 1.8rem;
+}
+
+/* space after each project grid */
+.projects-grid {
+  margin-bottom: 2.5rem;
+}
 
