@@ -1,3 +1,7 @@
+<!-- ========================= -->
+<!-- FILE: projects.html -->
+<!-- ========================= -->
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,10 +15,12 @@
 <header>
   <div class="container nav">
     <div class="brand">Ritesh Tiwari</div>
+
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a class="active" href="projects.html">Projects</a></li>
+      <li><a href="independent_study.html">Independent Study</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="cv.html">CV</a></li>
       <li><a href="contact.html">Contact</a></li>
@@ -23,73 +29,59 @@
 </header>
 
 <main class="container fade-in">
+
   <section class="projects-section">
-  <h1 class="page-title">Projects</h1>
-  <h2 class="section-title">Independent Study / Self-Initiated Project</h2>
-  <div class="projects-grid">
-  <div class="project-card">
-  <h3>Convergence of Sequences in Real Analysis</h3>
-  <p class="project-date">Independent Study · 2026</p>
 
-  <p class="project-desc">
-    A self-initiated theoretical study focused on convergence properties
-    of real sequences, emphasizing rigorous proofs and logical structure.
-  </p>
+    <h1 class="page-title">Projects</h1>
 
-  <ul>
-    <li>Boundedness of convergent sequences</li>
-    <li>Limit points and uniqueness of limits</li>
-    <li>Squeeze (Sandwich) Theorem</li>
-    <li>Algebra of sequences</li>
-  </ul>
+    <div class="projects-grid">
 
-  <p class="project-tools">
-    Real Analysis · Mathematical Proofs · Self-Study
-  </p>
+      <!-- Project 1 -->
+      <div class="project-card">
 
-  <a href="assets/papers/Project_1.pdf" target="_blank" rel="noopener">
-    📄 View Report (PDF)
-  </a>
-</div>
-</div>
-  <div class="projects-grid">
+        <h3>Numerical Methods for ODEs (MATLAB)</h3>
 
-    <!-- Project 1 -->
-    <div class="project-card">
-      <h3>Numerical Methods for ODEs (MATLAB)</h3>
-      <p class="project-date">May – July 2025</p>
+        <p class="project-date">
+          May – July 2025
+        </p>
 
-      <p class="project-desc">
-        Numerical solution of ordinary differential equations using classical
-        time-stepping schemes.
-      </p>
+        <p class="project-desc">
+          Numerical solution of ordinary differential equations using classical
+          time-stepping schemes.
+        </p>
 
-      <ul>
-        <li>Euler’s, Heun’s, and Runge–Kutta (RK4) methods</li>
-        <li>Comparison with analytical solutions and <code>ode45</code></li>
-        <li>Visualization of convergence and accuracy</li>
-      </ul>
+        <ul>
+          <li>Euler’s, Heun’s, and Runge–Kutta (RK4) methods</li>
+          <li>Comparison with analytical solutions and <code>ode45</code></li>
+          <li>Visualization of convergence and accuracy</li>
+        </ul>
 
-      <p class="project-tools">
-        MATLAB · Numerical Analysis · Differential Equations
-      </p>
+        <p class="project-tools">
+          MATLAB · Numerical Analysis · Differential Equations
+        </p>
 
-      <a href="https://github.com/RiteshTiwari12/MATLAB-ODE-PROJECT"
-         target="_blank" rel="noopener">
-        View on GitHub →
-      </a>
+        <a href="https://github.com/RiteshTiwari12/MATLAB-ODE-PROJECT"
+           target="_blank"
+           rel="noopener">
+          View on GitHub →
+        </a>
+
+      </div>
+
     </div>
 
-    <!-- Project 2 -->
-
-    <!-- Project 3 -->
-
-  </div>
-</section>
+  </section>
 
 </main>
 
-<footer>© <span id="year"></span> Ritesh Tiwari</footer>
-<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+<footer>
+  © <span id="year"></span> Ritesh Tiwari
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+new Date().getFullYear();
+</script>
+
 </body>
 </html>
