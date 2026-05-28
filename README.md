@@ -31,29 +31,25 @@ The purpose of this website is to:
 
 ## Projects
 
-### 🔹 Solving Ordinary Differential Equations Using Numerical Methods (MATLAB)
-**May – July 2025**
-- Implemented Euler’s, Heun’s, and Runge–Kutta (RK4) methods
-- Compared numerical solutions with analytical results and MATLAB’s `ode45`
-- Visualized accuracy and convergence behavior graphically
+This section contains my computational projects.
+
+---
+
+## Independent Study
+
+This section contains reports of my self-initiated projects using $\LaTeX$.
+
+---
+
+## Notes
+
+This section contains notes created using $\LaTeX$.
 
 ---
 
 ## Blog
 
-The blog section contains short mathematical writings, including:
-
-### Euler’s Identity
-A discussion of the equation  
-\[
-e^{i\pi} + 1 = 0
-\]  
-and its significance in connecting different branches of mathematics.
-
-### Understanding Epsilon–Delta Notation
-A conceptual explanation of limits using rigorous epsilon–delta definitions in real analysis, including worked examples.
-
-Mathematical expressions on the website are rendered using **MathJax**.
+The blog section contains short mathematical writings.
 
 ---
 
