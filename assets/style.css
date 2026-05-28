@@ -853,10 +853,11 @@ footer {
 }
 
 /* ==========================================
-   CLEAN LINKS FOR CV + CONTACT PAGES
+   CONTACT + CV PAGE LINKS
    ========================================== */
 
-main a {
+.contact-links a,
+.cv-link a {
 
   color: #00E69D;
 
@@ -866,9 +867,10 @@ main a {
     color 0.2s ease;
 }
 
-main a:hover {
+.contact-links a:hover,
+.cv-link a:hover {
 
-  color: #ffffff;
+  color: #00E69D;
 
   text-decoration: underline;
 }
